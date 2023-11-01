@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uso de tabelas grandes</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table{
+            width: 500px;
+            border-collapse: collapse;
+            position: relative;/*definindo posicionamento para fixar a primeira linha da tabela*/
+        }
+        td, th, caption{
+            border: 1px solid black;
+            padding: 10px;
+        }
+        caption{
+            font-size: 1.5em;
+            font-weight: bold;
+            background-color: lightgray;
+        }
+        thead > tr > th{
+            position: sticky;/*fixavel*/
+            top: -1px;/*necessario para definir o posicionamento onde a linha fixada ficará, -1 pois se deixar 0 fica um pixel de espaço inutil aparecendo*/
+            background-color: lightgray;
+        }
+        thead, tfoot{
+            background-color: grey;
+        }
+        tbody > tr:nth-child(2n-1)/*pseudo classe para efeito zebrado na tebela, outras opções: odd, even, 2n, 3n, 4n, etc*/ {
+            background-color: lightgrey;
+        }
+        td.num{
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <h1>Uso de tabelas grandes</h1>
+    <!--
+        Anatomia para tabelas grandes
+        TABLE
+            CAPTION
+            THEAD
+                TR, TD, TH
+            TBODY
+                TR, TD, TH
+            TFOOT
+                TR, TD, TH
+    -->
+    <table>
+        <CAPTIOn>População das unidades federativas</CAPTIOn>
+        <thead>
+            <tr>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 50px;">População</th>
+
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">45 919 049</td>
+            </tr>
+            
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">45 919 049</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17 264 943</td>
+             </tr> 
+             <tr>
+                <td>São Paulo</td>
+                <td class="num">45 919 049</td>
+            </tr>
+            
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">45 919 049</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17 264 943</td>
+             </tr> 
+             <tr>
+                <td>São Paulo</td>
+                <td class="num">45 919 049</td>
+            </tr>
+            
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">45 919 049</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17 264 943</td>
+             </tr> 
+             <tr>
+                <td>São Paulo</td>
+                <td class="num">45 919 049</td>
+            </tr>
+            
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">45 919 049</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17 264 943</td>
+             </tr> 
+             <tr>
+                <td>São Paulo</td>
+                <td class="num">45 919 049</td>
+            </tr>
+            
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">45 919 049</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17 264 943</td>
+             </tr> 
+             <tr>
+                <td>São Paulo</td>
+                <td class="num">45 919 049</td>
+            </tr>
+            
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">45 919 049</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17 264 943</td>
+             </tr>
+             <tr>
+                <td>São Paulo</td>
+                <td class="num">45 919 049</td>
+            </tr>
+            
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">45 919 049</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17 264 943</td>
+             </tr> 
+             <tr>
+                <td>São Paulo</td>
+                <td class="num">45 919 049</td>
+            </tr>
+            
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">45 919 049</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17 264 943</td>
+             </tr> 
+             <tr>
+                <td>São Paulo</td>
+                <td class="num">45 919 049</td>
+            </tr>
+            
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">45 919 049</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17 264 943</td>
+             </tr> 
+             <tr>
+                <td>São Paulo</td>
+                <td class="num">45 919 049</td>
+            </tr>
+            
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">45 919 049</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17 264 943</td>
+             </tr> 
+             <tr>
+                <td>São Paulo</td>
+                <td class="num">45 919 049</td>
+            </tr>
+            
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">45 919 049</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17 264 943</td>
+             </tr> 
+             <tr>
+                <td>São Paulo</td>
+                <td class="num">45 919 049</td>
+            </tr>
+            
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">45 919 049</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17 264 943</td>
+             </tr>
+        </tbody>
+        <tfoot>
+            <th scope="row">Total de habitantes</th>
+            <td class="num"><strong>0000</strong></td>
+        </tfoot>
+    </table>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo aliquam reprehenderit illum totam nulla veniam. Repudiandae sapiente natus nemo vitae numquam, hic quam. Reprehenderit laboriosam rerum iure quasi, error aliquam! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perferendis amet ad illum tempora? Sapiente natus cumque exercitationem eos facere, sequi minima officiis nesciunt similique dolorem fugit quaerat voluptas, quibusdam eius. Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, mollitia eos! Possimus asperiores suscipit ab id iusto recusandae est aspernatur quae excepturi alias nisi tenetur non unde itaque, nobis vitae! Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium atque facere magni laudantium officia quidem optio eius, sit quam nisi molestias illo provident. Dignissimos necessitatibus accusantium odio? Reiciendis, qui assumenda!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque pariatur delectus necessitatibus laborum libero corporis sint placeat, dolores reiciendis aliquam illum quaerat exercitationem doloremque iste. Deserunt veniam illo consectetur quidem!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, porro accusantium odit ipsam facilis eum inventore ea maxime distinctio sapiente repellendus ab, enim vitae a dolorem obcaecati delectus quas maiores.
+
+    </p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo aliquam reprehenderit illum totam nulla veniam. Repudiandae sapiente natus nemo vitae numquam, hic quam. Reprehenderit laboriosam rerum iure quasi, error aliquam! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perferendis amet ad illum tempora? Sapiente natus cumque exercitationem eos facere, sequi minima officiis nesciunt similique dolorem fugit quaerat voluptas, quibusdam eius. Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, mollitia eos! Possimus asperiores suscipit ab id iusto recusandae est aspernatur quae excepturi alias nisi tenetur non unde itaque, nobis vitae! Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium atque facere magni laudantium officia quidem optio eius, sit quam nisi molestias illo provident. Dignissimos necessitatibus accusantium odio? Reiciendis, qui assumenda!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque pariatur delectus necessitatibus laborum libero corporis sint placeat, dolores reiciendis aliquam illum quaerat exercitationem doloremque iste. Deserunt veniam illo consectetur quidem!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, porro accusantium odit ipsam facilis eum inventore ea maxime distinctio sapiente repellendus ab, enim vitae a dolorem obcaecati delectus quas maiores.
+        
+    </p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo aliquam reprehenderit illum totam nulla veniam. Repudiandae sapiente natus nemo vitae numquam, hic quam. Reprehenderit laboriosam rerum iure quasi, error aliquam! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perferendis amet ad illum tempora? Sapiente natus cumque exercitationem eos facere, sequi minima officiis nesciunt similique dolorem fugit quaerat voluptas, quibusdam eius. Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, mollitia eos! Possimus asperiores suscipit ab id iusto recusandae est aspernatur quae excepturi alias nisi tenetur non unde itaque, nobis vitae! Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium atque facere magni laudantium officia quidem optio eius, sit quam nisi molestias illo provident. Dignissimos necessitatibus accusantium odio? Reiciendis, qui assumenda!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque pariatur delectus necessitatibus laborum libero corporis sint placeat, dolores reiciendis aliquam illum quaerat exercitationem doloremque iste. Deserunt veniam illo consectetur quidem!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, porro accusantium odit ipsam facilis eum inventore ea maxime distinctio sapiente repellendus ab, enim vitae a dolorem obcaecati delectus quas maiores.
+        
+    </p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo aliquam reprehenderit illum totam nulla veniam. Repudiandae sapiente natus nemo vitae numquam, hic quam. Reprehenderit laboriosam rerum iure quasi, error aliquam! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perferendis amet ad illum tempora? Sapiente natus cumque exercitationem eos facere, sequi minima officiis nesciunt similique dolorem fugit quaerat voluptas, quibusdam eius. Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, mollitia eos! Possimus asperiores suscipit ab id iusto recusandae est aspernatur quae excepturi alias nisi tenetur non unde itaque, nobis vitae! Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium atque facere magni laudantium officia quidem optio eius, sit quam nisi molestias illo provident. Dignissimos necessitatibus accusantium odio? Reiciendis, qui assumenda!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque pariatur delectus necessitatibus laborum libero corporis sint placeat, dolores reiciendis aliquam illum quaerat exercitationem doloremque iste. Deserunt veniam illo consectetur quidem!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, porro accusantium odit ipsam facilis eum inventore ea maxime distinctio sapiente repellendus ab, enim vitae a dolorem obcaecati delectus quas maiores.
+        
+    </p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo aliquam reprehenderit illum totam nulla veniam. Repudiandae sapiente natus nemo vitae numquam, hic quam. Reprehenderit laboriosam rerum iure quasi, error aliquam! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perferendis amet ad illum tempora? Sapiente natus cumque exercitationem eos facere, sequi minima officiis nesciunt similique dolorem fugit quaerat voluptas, quibusdam eius. Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, mollitia eos! Possimus asperiores suscipit ab id iusto recusandae est aspernatur quae excepturi alias nisi tenetur non unde itaque, nobis vitae! Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium atque facere magni laudantium officia quidem optio eius, sit quam nisi molestias illo provident. Dignissimos necessitatibus accusantium odio? Reiciendis, qui assumenda!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque pariatur delectus necessitatibus laborum libero corporis sint placeat, dolores reiciendis aliquam illum quaerat exercitationem doloremque iste. Deserunt veniam illo consectetur quidem!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, porro accusantium odit ipsam facilis eum inventore ea maxime distinctio sapiente repellendus ab, enim vitae a dolorem obcaecati delectus quas maiores.
+        
+    </p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo aliquam reprehenderit illum totam nulla veniam. Repudiandae sapiente natus nemo vitae numquam, hic quam. Reprehenderit laboriosam rerum iure quasi, error aliquam! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perferendis amet ad illum tempora? Sapiente natus cumque exercitationem eos facere, sequi minima officiis nesciunt similique dolorem fugit quaerat voluptas, quibusdam eius. Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, mollitia eos! Possimus asperiores suscipit ab id iusto recusandae est aspernatur quae excepturi alias nisi tenetur non unde itaque, nobis vitae! Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium atque facere magni laudantium officia quidem optio eius, sit quam nisi molestias illo provident. Dignissimos necessitatibus accusantium odio? Reiciendis, qui assumenda!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque pariatur delectus necessitatibus laborum libero corporis sint placeat, dolores reiciendis aliquam illum quaerat exercitationem doloremque iste. Deserunt veniam illo consectetur quidem!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, porro accusantium odit ipsam facilis eum inventore ea maxime distinctio sapiente repellendus ab, enim vitae a dolorem obcaecati delectus quas maiores.
+        
+    </p>
+</body>
+</html>

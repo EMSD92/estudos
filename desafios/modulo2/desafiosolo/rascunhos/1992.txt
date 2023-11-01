@@ -1,0 +1,26 @@
+<header>
+O único tri mundial
+
+A história das 3 maiores conquistas do maior clube do Brasil.
+
+menu
+
+Home | Contato | Links Recomendados
+
+</header>
+
+<main>
+Introdução(libertadores)
+
+elenco
+
+jogo
+
+volta pra casa
+
+box2 | box3 
+
+</main>
+<footer>
+Desenvolvido por Evandro Mantovani
+</footer>

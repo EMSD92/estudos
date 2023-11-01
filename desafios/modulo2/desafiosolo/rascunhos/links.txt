@@ -1,0 +1,21 @@
+<header>
+O único tri mundial
+
+A história das 3 maiores conquistas do maior clube do Brasil.
+
+menu
+
+Home | Contato | Links Recomendados
+
+</header>
+
+<main>
+
+link 1
+link 2
+link 3
+
+</main>
+<footer>
+Desenvolvido por Evandro Mantovani
+</footer>

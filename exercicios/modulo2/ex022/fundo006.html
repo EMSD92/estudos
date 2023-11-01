@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundo fixo de tela</title>
+    <style>
+        body{
+            
+            height: 100vh;
+            /*
+            background-color: black;
+            background-image: url(images/wallpaper002.jpg);
+            background-position: center center;
+            background-repeat: no-repeat;
+            
+            background-attachment: fixed;
+            */
+
+            /*
+            shorthand para background
+            color > image > position > repeat > size (aparentemente ainda nao esta funcionando, apesar de estar na recomendação da w3c) > attachment
+            */
+            background: black url(images/wallpaper002.jpg) center center no-repeat fixed;
+            background-size: cover;
+
+        }
+        main{
+            background-color: white;
+            max-width: 400px;
+            padding: 10px;
+            margin: auto;
+            border: 1px solid darkblue;
+            border-radius: 10px;
+           
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <p>
+            <h1>Teste de imagem de fundo</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed dolore dolores recusandae iste voluptates ea magnam possimus sint facilis reprehenderit aliquid qui ipsum, earum tempora necessitatibus sequi molestiae, repudiandae praesentium Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam, rem. Officia, illo. Earum reprehenderit modi molestias rem optio fugiat aliquam nihil amet, nam ipsam harum cum recusandae accusantium? Quidem, deleniti! Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam officiis quam hic inventore quas quia accusamus, ullam laboriosam commodi, iste provident excepturi laudantium quasi cupiditate perspiciatis esse odio magni reprehenderit!</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed dolore dolores recusandae iste voluptates ea magnam possimus sint facilis reprehenderit aliquid qui ipsum, earum tempora necessitatibus sequi molestiae, repudiandae praesentium Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam, rem. Officia, illo. Earum reprehenderit modi molestias rem optio fugiat aliquam nihil amet, nam ipsam harum cum recusandae accusantium? Quidem, deleniti! Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam officiis quam hic inventore quas quia accusamus, ullam laboriosam commodi, iste provident excepturi laudantium quasi cupiditate perspiciatis esse odio magni reprehenderit!</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed dolore dolores recusandae iste voluptates ea magnam possimus sint facilis reprehenderit aliquid qui ipsum, earum tempora necessitatibus sequi molestiae, repudiandae praesentium Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam, rem. Officia, illo. Earum reprehenderit modi molestias rem optio fugiat aliquam nihil amet, nam ipsam harum cum recusandae accusantium? Quidem, deleniti! Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam officiis quam hic inventore quas quia accusamus, ullam laboriosam commodi, iste provident excepturi laudantium quasi cupiditate perspiciatis esse odio magni reprehenderit!</p>
+    </main>
+</body>
+</html>
