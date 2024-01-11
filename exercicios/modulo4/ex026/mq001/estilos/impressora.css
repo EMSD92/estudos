@@ -12,5 +12,11 @@ html{
     line-height: 1.5em;
 }
 menu{
-    display: none;
+    display: none; 
+}
+article{
+    width: 100%;
+}
+article::after{
+    content: "Artigo impresso basjaskdjasdkj"
 }
