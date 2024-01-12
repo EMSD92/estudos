@@ -1,4 +1,4 @@
 @charset "UTF-8";
 body{
-    background: url(../images/cev-portrait.jpg);
+    background-image: url(images/cev-portrait.jpg);
 }

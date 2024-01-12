@@ -1,5 +1,5 @@
 @charset "UTF-8";
 body{
-    background: url(../images/cev-landscape.jpg);
+    background-image: url(images/cev-landscape.jpg);
     background-position: left bottom;
 }
